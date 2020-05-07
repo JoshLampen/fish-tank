@@ -1,12 +1,12 @@
-class SwitchFish extends Fish {
+class BiteFish extends Fish {
 
   constructor(options) {
     super(options); // Call super to run the code inside Fish's constructor
-    this.imageUri = '/images/switch-fish.jpg';
+    this.imageUri = '/images/bite-fish.gif';
   }
 
   onClick(event) {
-    this.makeNewVelocity(50);
     this.enlarge(10);
   }
+
 }

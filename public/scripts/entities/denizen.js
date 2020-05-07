@@ -70,4 +70,14 @@ class Denizen {
       this.position.y - 5 * this.height > bounds.maxY
     );
   }
+
+  enlarge(amount) {
+    this.height += amount;
+    this.width += amount;
+    setTimeout(() => {
+      this.height -= amount;
+      this.width -= amount;
+    }, 50);
+  }
+
 }
